@@ -10,8 +10,9 @@ plugins=(... sailor)
 
 | Alias | Description |
 |:-:|:-:|
-| `artisan`  | `sail artisan`  |
+| `sa`  | `sail artisan`  |
 | `sas`  | `sail artisan serve` |
+| `sat`  | `sail artisan tinker` |
 
 ## Database
 
@@ -21,6 +22,7 @@ plugins=(... sailor)
 | `samf`  |  `sail artisan migrate:fresh` |
 | `samfs`  |  `sail artisan migrate:fresh --seed` |
 | `samr`  |  `sail artisan migrate:rollback` |
+| `samr1`  |  `sail artisan migrate:rollback --step=1` |
 | `sads`  |  `sail artisan db:seed` |
 
 ## Makers
@@ -28,6 +30,7 @@ plugins=(... sailor)
 | Alias | Description |
 |:-:|:-:|
 | `samm`  |  `sail artisan make:model` |
+| `sammi`  |  `sail artisan make:migration` |
 | `samc`  |  `sail artisan make:controller` |
 | `sams`  |  `sail artisan make:seeder` |
 | `samt`  |  `sail artisan make:test` |
@@ -46,6 +49,7 @@ plugins=(... sailor)
 | `sacoc`  |  `sail artisan config:clear` |
 | `savic`  |  `sail artisan view:clear` |
 | `saroc`  |  `sail artisan route:clear` |
+| `saopc`  |  `sail artisan optimize:clear` |
 
 ## Queues
 

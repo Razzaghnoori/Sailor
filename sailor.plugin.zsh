@@ -1,5 +1,6 @@
 #!zsh
-alias sartisan='sail artisan'
+alias sa='sail artisan'
+alias sat='sail artisan tinker'
 alias sbob='sail artisan bob::build'
 
 # Development
@@ -10,10 +11,12 @@ alias sam='sail artisan migrate'
 alias samf='sail artisan migrate:fresh'
 alias samfs='sail artisan migrate:fresh --seed'
 alias samr='sail artisan migrate:rollback'
+alias samr1='sail artisan migrate:rollback --step=1'
 alias sads='sail artisan db:seed'
 
 # Makers
 alias samm='sail artisan make:model'
+alias sammi='sail artisan make:migration'
 alias samc='sail artisan make:controller'
 alias sams='sail artisan make:seeder'
 alias samt='sail artisan make:test'
@@ -31,6 +34,7 @@ alias sacac='sail artisan cache:clear'
 alias sacoc='sail artisan config:clear'
 alias savic='sail artisan view:clear'
 alias saroc='sail artisan route:clear'
+alias saopc='sail artisan optimize:clear'
 
 # queues
 alias saqf='sail artisan queue:failed'
